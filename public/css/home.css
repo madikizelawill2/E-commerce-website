@@ -1,6 +1,8 @@
 @import 'global.css';
 @import 'nav.css';
 @import 'footer.css';
+@import 'phone.css';
+@import 'tablet.css';
 
 .header-section {
   position: relative;
@@ -181,3 +183,5 @@
   position: absolute;
   margin-top: -10em;
 }
+
+

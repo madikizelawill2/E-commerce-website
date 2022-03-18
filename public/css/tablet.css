@@ -1,0 +1,9 @@
+/*Media queries for 786px or less*/
+/* tablet*/
+@media only screen and (min-width: 412px) and (max-width: 1023px){
+
+    *{
+        outline: 1px solid green;
+    }
+
+  }
