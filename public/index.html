@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Fashion Store</title>
 
     <link rel="stylesheet" href="css/home.css" type="text/css" media="screen" />
@@ -22,7 +24,13 @@
     />
   </head>
 
+  <!-- #region header -->
+
+  <div class="header-div">
   <body>
+
+    
+
     <nav class="navbar">
       <div class="nav">
         <img src="img/logo-name.jpg" class="brand-logo" alt="" />
@@ -44,9 +52,21 @@
           <a href="#" class="nav-cart-icon"
             ><i class="fa-solid fa-cart-arrow-down" aria-hidden="true"></i
           ></a>
+          <a href="#" class="nav-wishlist-icon"
+          ><i class="fas fa-heart" aria-hidden="true"></i
+          ></a>
+          <a href="#" class="nav-menu-icon" onclick="toggleMenu()"
+          ><i class="fas fa-bars" aria-hidden="true"></i
+          ></a>
         </div>
       </div>
-      <ul class="links-container">
+  </div>
+      
+  <!-- #endregion Header  -->
+
+  <!-- #region menu -->
+  <div class="menu-div">
+      <ul class="links-container" id="links-container">
         <li class="links-item"><a href="#" class="link">Home</a></li>
         <li class="links-item">
           <a href="#women-container-target" class="link">Women</a>
@@ -66,7 +86,11 @@
         <li class="links-item"><a href="#about" class="link">About Us</a></li>
       </ul>
     </nav>
-
+  </div>
+  <!-- #endregion menu -->
+    
+  <!-- #region content -->
+  <div class="content-div">
     <header class="header-section">
       <video class="header-video" autoplay loop mute>
         <source
@@ -162,8 +186,11 @@
       <h2 class="product-category">Shoes</h2>
       <div class="product-container" id="shoes-container"></div>
     </section>
+  </div>
+  <!-- #endregion content -->
 
-    <!-- #region Footer Section -->
+  <!-- #region Footer Section -->
+  <div class="footer-div">
     <footer>
       <div class="footer-content">
         <div class="footer--left">
@@ -226,7 +253,7 @@
             <p class="info">
               support emails - help@styleClothing.com, customersupport@style.com
             </p>
-            <p class="info">telephone - 060 867 9857, 131 876 6252</p>
+            <p class  ="info">telephone - 060 867 9857, 131 876 6252</p>
             <div class="footer-social-container">
               <div>
                 <a href="#" class="social-link">terms and conditions</a>
@@ -276,9 +303,13 @@
         </div>
       </div>
     </footer>
+  </div>
     <!-- #endregion Footer Section -->
 
+  <!-- #region js scripts -->
     <script src="js/data.js"></script>
     <script src="js/index.js"></script>
+  <!-- #endregion js scripts -->
+
   </body>
 </html>
