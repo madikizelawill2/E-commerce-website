@@ -1,5 +1,30 @@
 @media only screen and (max-width: 412px){
     *{
         outline: 1px solid red;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .navbar{
+        float: top;
+        width: auto;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 999;
+    }
+    .nav{
+        display: flex;
+    }
+    .nav-menu-icon{
+        display: block;
+    }
+    .brand-logo{
+        width: 50px;
+        height: auto !important;
+        padding: 0;
+        left: 0;
+        right: 0;
     }
 }

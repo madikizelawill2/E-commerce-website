@@ -131,3 +131,18 @@ function renderListUI() {
   renderProductList(ACCESSORIES_PRODUCTS, accessoriesContainer);
   renderProductList(SHOES_PRODUCTS, shoesContainer);
 }
+
+
+var linksMenu = document.getElementById("links-container");
+linksMenu.style.maxHeight = "0px";
+
+function toggleMenu(){
+  if(linksMenu.style.maxHeight == "0px")
+  {
+    linksMenu.style.maxHeight = "130px";
+  }
+  else
+  {
+    linksMenu.style.maxHeight = "0px";
+  }
+}

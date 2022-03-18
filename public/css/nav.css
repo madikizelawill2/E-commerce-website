@@ -78,3 +78,6 @@
 .link:hover {
   opacity: 3;
 }
+.nav-menu-icon{
+  display: none;
+}
