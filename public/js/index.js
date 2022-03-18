@@ -132,17 +132,15 @@ function renderListUI() {
   renderProductList(SHOES_PRODUCTS, shoesContainer);
 }
 
+// var linksMenu = document.getElementById("links-container");
+// linksMenu.style.maxHeight = "0px";
+const menu = document.querySelector('.sidebar-links-wrapper');
+const activeMenuClass = 'sidebar-links-wrapper-active';
 
-var linksMenu = document.getElementById("links-container");
-linksMenu.style.maxHeight = "0px";
-
-function toggleMenu(){
-  if(linksMenu.style.maxHeight == "0px")
-  {
-    linksMenu.style.maxHeight = "130px";
-  }
-  else
-  {
-    linksMenu.style.maxHeight = "0px";
-  }
+function toggleMenu() {
+  menu.classList.toggle(activeMenuClass);
 }
+
+menu.addEventListener('click', () => {
+  menu.classList.remove(activeMenuClass);
+});
