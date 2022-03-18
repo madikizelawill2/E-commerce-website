@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Fashion Store</title>
 
-    <link rel="stylesheet" href="css/home.css" type="text/css" media="screen" />
+    <link
+      rel="stylesheet"
+      href="css/index.css"
+      type="text/css"
+      media="screen"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,47 +30,19 @@
 
   <!-- #region header -->
 
-  <div class="header-div">
   <body>
-
-    
-
-    <nav class="navbar">
-      <div class="nav">
-        <img src="img/logo-name.jpg" class="brand-logo" alt="" />
-        <div class="nav-items">
-          <div class="search">
-            <input
-              type="text"
-              class="search-box"
-              autofocus
-              placeholder="Whats your style"
-            />
-            <button class="search-button">
-              <span class="fa fa-search"></span>
-            </button>
-          </div>
-          <a href="#" class="nav-user-icon"
-            ><i class="fa-solid fa-user" aria-hidden="true"></i
-          ></a>
-          <a href="#" class="nav-cart-icon"
-            ><i class="fa-solid fa-cart-arrow-down" aria-hidden="true"></i
-          ></a>
-          <a href="#" class="nav-wishlist-icon"
-          ><i class="fas fa-heart" aria-hidden="true"></i
-          ></a>
-          <a href="#" class="nav-menu-icon" onclick="toggleMenu()"
-          ><i class="fas fa-bars" aria-hidden="true"></i
-          ></a>
-        </div>
+    <div class="sidebar-wrap">
+      <div class="brand">
+        <img src="img/logo-name.jpg" class="brand-img" alt="logo" />
       </div>
-  </div>
-      
-  <!-- #endregion Header  -->
 
-  <!-- #region menu -->
-  <div class="menu-div">
-      <ul class="links-container" id="links-container">
+      <a
+        href="javascript:toggleMenu()"
+        class="fa-solid fa-ellipsis-vertical menu-toggle"
+        id="menu-toggle"
+      ></a>
+
+      <ul class="sidebar-links-wrapper">
         <li class="links-item"><a href="#" class="link">Home</a></li>
         <li class="links-item">
           <a href="#women-container-target" class="link">Women</a>
@@ -84,232 +60,267 @@
           <a href="#shoes-container-target" class="link">Shoes</a>
         </li>
         <li class="links-item"><a href="#about" class="link">About Us</a></li>
+
+        <div class="menu-close">
+          <span class="fa fa-times"></span>
+        </div>
       </ul>
-    </nav>
-  </div>
-  <!-- #endregion menu -->
-    
-  <!-- #region content -->
-  <div class="content-div">
-    <header class="header-section">
-      <video class="header-video" autoplay loop mute>
-        <source
-          src="https://firebasestorage.googleapis.com/v0/b/bzntech-functions.appspot.com/o/production%20ID_3917742.mp4?alt=media&token=7a7a8a39-d904-451f-a742-343e19f38683"
-          type="video/mp4"
+    </div>
+
+    <div class="content-wrap">
+      <div class="search-wrapper">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Start typing to search..."
         />
-      </video>
-      <div class="content">
-        <p class="collection-title">Your choice your style</p>
       </div>
-    </header>
 
-    <section class="product">
-      <div class="target" id="big-sale-container-target"></div>
-      <h2 class="product-category">Big Sale</h2>
-      <div class="product-container" id="big-sale-container"></div>
-    </section>
+      <header class="header-section">
+        <video class="header-video" autoplay loop mute>
+          <source
+            src="https://firebasestorage.googleapis.com/v0/b/bzntech-functions.appspot.com/o/production%20ID_3917742.mp4?alt=media&token=7a7a8a39-d904-451f-a742-343e19f38683"
+            type="video/mp4"
+          />
+        </video>
+        <div class="content">
+          <p class="collection-title">Your choice your style</p>
+        </div>
+      </header>
 
-    <section class="collection-container">
-      <a href="#" class="collection">
-        <img src="img/men-collection.jpg" alt="" />
-        <p class="collection-title">Men<br />apparels</p>
-      </a>
+      <section class="product">
+        <div class="target" id="big-sale-container-target"></div>
+        <h2 class="product-category">Big Sale</h2>
+        <div class="product-container" id="big-sale-container"></div>
+      </section>
 
-      <a href="#" class="collection">
-        <img src="img/women-collection.jpg" alt="" />
-        <p class="collection-title">Women<br />apparels</p>
-      </a>
+      <section class="collection-container">
+        <a href="#" class="collection">
+          <img src="img/men-collection.jpg" alt="" />
+          <p class="collection-title">Men<br />apparels</p>
+        </a>
 
-      <a href="#" class="collection">
-        <img src="img/kids-collection-small.jpg" alt="" />
-        <p class="collection-title">Kids<br />apparels</p>
-      </a>
+        <a href="#" class="collection">
+          <img src="img/women-collection.jpg" alt="" />
+          <p class="collection-title">Women<br />apparels</p>
+        </a>
 
-      <a href="#" class="collection">
-        <img src="img/acc-collection.jpg" alt="" />
-        <p class="collection-title">Accessories<br />apparels</p>
-      </a>
+        <a href="#" class="collection">
+          <img src="img/kids-collection-small.jpg" alt="" />
+          <p class="collection-title">Kids<br />apparels</p>
+        </a>
 
-      <a href="#" class="collection">
-        <img src="img/fashion-collection.jpg" alt="" />
-        <p class="collection-title">Fashion<br />apparels</p>
-      </a>
-    </section>
+        <a href="#" class="collection">
+          <img src="img/acc-collection.jpg" alt="" />
+          <p class="collection-title">Accessories<br />apparels</p>
+        </a>
 
-    <section class="product">
-      <div class="target" id="new-arrival-container-target"></div>
-      <h2 class="product-category">New Arrivals</h2>
-      <div class="product-container" id="new-arrival-container"></div>
-    </section>
+        <a href="#" class="collection">
+          <img src="img/fashion-collection.jpg" alt="" />
+          <p class="collection-title">Fashion<br />apparels</p>
+        </a>
+      </section>
 
-    <section class="product">
-      <div class="target" id="trending-container-target"></div>
-      <h2 class="product-category">Trending</h2>
-      <div class="product-container" id="trending-container"></div>
-    </section>
+      <section class="product">
+        <div class="target" id="new-arrival-container-target"></div>
+        <h2 class="product-category">New Arrivals</h2>
+        <div class="product-container" id="new-arrival-container"></div>
+      </section>
 
-    <section class="bridge-section">
-      <video class="bridge-video" autoplay loop mute>
-        <source
-          src="https://firebasestorage.googleapis.com/v0/b/bzntech-functions.appspot.com/o/pexels-karolina-grabowska-7953981.mp4?alt=media&token=970c40b3-4521-419f-a948-b535f435a3c2"
-          type="video/mp4"
-        />
-      </video>
-    </section>
+      <section class="product">
+        <div class="target" id="trending-container-target"></div>
+        <h2 class="product-category">Trending</h2>
+        <div class="product-container" id="trending-container"></div>
+      </section>
 
-    <section class="product">
-      <div class="target" id="women-container-target"></div>
-      <h2 class="product-category">Women</h2>
-      <div class="product-container" id="women-container"></div>
-    </section>
+      <section class="bridge-section">
+        <video class="bridge-video" autoplay loop mute>
+          <source
+            src="https://firebasestorage.googleapis.com/v0/b/bzntech-functions.appspot.com/o/pexels-karolina-grabowska-7953981.mp4?alt=media&token=970c40b3-4521-419f-a948-b535f435a3c2"
+            type="video/mp4"
+          />
+        </video>
+      </section>
 
-    <section class="product">
-      <div class="target" id="men-container-target"></div>
-      <h2 class="product-category">Men</h2>
-      <div class="product-container" id="men-container"></div>
-    </section>
+      <section class="product">
+        <div class="target" id="women-container-target"></div>
+        <h2 class="product-category">Women</h2>
+        <div class="product-container" id="women-container"></div>
+      </section>
 
-    <section class="product">
-      <div class="target" id="kids-container-target"></div>
-      <h2 class="product-category">Kids</h2>
-      <div class="product-container" id="kids-container"></div>
-    </section>
+      <section class="product">
+        <div class="target" id="men-container-target"></div>
+        <h2 class="product-category">Men</h2>
+        <div class="product-container" id="men-container"></div>
+      </section>
 
-    <section class="product">
-      <div class="target" id="accessories-container-target"></div>
-      <h2 class="product-category">Accessories</h2>
-      <div class="product-container" id="accessories-container"></div>
-    </section>
+      <section class="product">
+        <div class="target" id="kids-container-target"></div>
+        <h2 class="product-category">Kids</h2>
+        <div class="product-container" id="kids-container"></div>
+      </section>
 
-    <section class="product">
-      <div class="target" id="shoes-container-target"></div>
-      <h2 class="product-category">Shoes</h2>
-      <div class="product-container" id="shoes-container"></div>
-    </section>
-  </div>
-  <!-- #endregion content -->
+      <section class="product">
+        <div class="target" id="accessories-container-target"></div>
+        <h2 class="product-category">Accessories</h2>
+        <div class="product-container" id="accessories-container"></div>
+      </section>
 
-  <!-- #region Footer Section -->
-  <div class="footer-div">
-    <footer>
-      <div class="footer-content">
-        <div class="footer--left">
-          <div class="footer-ul-container">
-            <ul class="category">
-              <li class="category-title">Men</li>
-              <li><a href="#" class="footer-link">t-shirts</a></li>
-              <li><a href="#" class="footer-link">Watch</a></li>
-              <li><a href="#" class="footer-link">Trouser</a></li>
-              <li><a href="#" class="footer-link">Shoes</a></li>
-              <li><a href="#" class="footer-link">Casuals</a></li>
-              <li><a href="#" class="footer-link">Jeans</a></li>
-              <li><a href="#" class="footer-link">Shirts</a></li>
-              <li><a href="#" class="footer-link">Belts</a></li>
-              <li><a href="#" class="footer-link">Formals</a></li>
-              <li><a href="#" class="footer-link">Sports</a></li>
-              <li><a href="#" class="footer-link">longs</a></li>
-              <li><a href="#" class="footer-link">Jackets</a></li>
-            </ul>
+      <section class="product">
+        <div class="target" id="shoes-container-target"></div>
+        <h2 class="product-category">Shoes</h2>
+        <div class="product-container" id="shoes-container"></div>
+      </section>
 
-            <ul class="category">
-              <li class="category-title">Women</li>
-              <li><a href="#" class="footer-link">t-shirts</a></li>
-              <li><a href="#" class="footer-link">Watch</a></li>
-              <li><a href="#" class="footer-link">Trouser</a></li>
-              <li><a href="#" class="footer-link">Shoes</a></li>
-              <li><a href="#" class="footer-link">Casuals</a></li>
-              <li><a href="#" class="footer-link">Jeans</a></li>
-              <li><a href="#" class="footer-link">Shirts</a></li>
-              <li><a href="#" class="footer-link">Belts</a></li>
-              <li><a href="#" class="footer-link">Formals</a></li>
-              <li><a href="#" class="footer-link">Sports</a></li>
-              <li><a href="#" class="footer-link">longs</a></li>
-              <li><a href="#" class="footer-link">Jackets</a></li>
-            </ul>
+      <footer>
+        <div class="footer-content">
+          <div class="footer--left">
+            <div class="footer-ul-container">
+              <ul class="category">
+                <li class="category-title">Men</li>
+                <li><a href="#" class="footer-link">t-shirts</a></li>
+                <li><a href="#" class="footer-link">Watch</a></li>
+                <li><a href="#" class="footer-link">Trouser</a></li>
+                <li><a href="#" class="footer-link">Shoes</a></li>
+                <li><a href="#" class="footer-link">Casuals</a></li>
+                <li><a href="#" class="footer-link">Jeans</a></li>
+                <li><a href="#" class="footer-link">Shirts</a></li>
+                <li><a href="#" class="footer-link">Belts</a></li>
+                <li><a href="#" class="footer-link">Formals</a></li>
+                <li><a href="#" class="footer-link">Sports</a></li>
+                <li><a href="#" class="footer-link">longs</a></li>
+                <li><a href="#" class="footer-link">Jackets</a></li>
+              </ul>
 
-            <ul class="category">
-              <li class="category-title">kids</li>
-              <li><a href="#" class="footer-link">t-shirts</a></li>
-              <li><a href="#" class="footer-link">Watch</a></li>
-              <li><a href="#" class="footer-link">Trouser</a></li>
-              <li><a href="#" class="footer-link">Shoes</a></li>
-              <li><a href="#" class="footer-link">Casuals</a></li>
-              <li><a href="#" class="footer-link">Jeans</a></li>
-              <li><a href="#" class="footer-link">Shirts</a></li>
-              <li><a href="#" class="footer-link">Belts</a></li>
-              <li><a href="#" class="footer-link">Formals</a></li>
-              <li><a href="#" class="footer-link">Sports</a></li>
-              <li><a href="#" class="footer-link">longs</a></li>
-              <li><a href="#" class="footer-link">Jackets</a></li>
-            </ul>
-          </div>
-          <div clss="about-section" id="about">
-            <p class="footer-title">About Us</p>
-            <p class="info">
-              We are a very huge great team, working together to make your life
-              much more easy We will make you smile Yes this is the 'About Us'
-              page .. but in Style we are aboout you!
-            </p>
-            <p class="info">
-              support emails - help@styleClothing.com, customersupport@style.com
-            </p>
-            <p class  ="info">telephone - 060 867 9857, 131 876 6252</p>
-            <div class="footer-social-container">
-              <div>
-                <a href="#" class="social-link">terms and conditions</a>
-                <a href="#" class="social-link">privacy page</a>
+              <ul class="category">
+                <li class="category-title">Women</li>
+                <li><a href="#" class="footer-link">t-shirts</a></li>
+                <li><a href="#" class="footer-link">Watch</a></li>
+                <li><a href="#" class="footer-link">Trouser</a></li>
+                <li><a href="#" class="footer-link">Shoes</a></li>
+                <li><a href="#" class="footer-link">Casuals</a></li>
+                <li><a href="#" class="footer-link">Jeans</a></li>
+                <li><a href="#" class="footer-link">Shirts</a></li>
+                <li><a href="#" class="footer-link">Belts</a></li>
+                <li><a href="#" class="footer-link">Formals</a></li>
+                <li><a href="#" class="footer-link">Sports</a></li>
+                <li><a href="#" class="footer-link">longs</a></li>
+                <li><a href="#" class="footer-link">Jackets</a></li>
+              </ul>
+
+              <ul class="category">
+                <li class="category-title">kids</li>
+                <li><a href="#" class="footer-link">t-shirts</a></li>
+                <li><a href="#" class="footer-link">Watch</a></li>
+                <li><a href="#" class="footer-link">Trouser</a></li>
+                <li><a href="#" class="footer-link">Shoes</a></li>
+                <li><a href="#" class="footer-link">Casuals</a></li>
+                <li><a href="#" class="footer-link">Jeans</a></li>
+                <li><a href="#" class="footer-link">Shirts</a></li>
+                <li><a href="#" class="footer-link">Belts</a></li>
+                <li><a href="#" class="footer-link">Formals</a></li>
+                <li><a href="#" class="footer-link">Sports</a></li>
+                <li><a href="#" class="footer-link">longs</a></li>
+                <li><a href="#" class="footer-link">Jackets</a></li>
+              </ul>
+            </div>
+            <div clss="about-section" id="about">
+              <p class="footer-title">About Us</p>
+              <p class="info">
+                We are a very huge great team, working together to make your
+                life much more easy We will make you smile Yes this is the
+                'About Us' page .. but in Style we are aboout you!
+              </p>
+              <p class="info">
+                support emails - help@styleClothing.com,
+                customersupport@style.com
+              </p>
+              <p class="info">telephone - 060 867 9857, 131 876 6252</p>
+              <div class="footer-social-container">
+                <div>
+                  <a href="#" class="social-link">terms and conditions</a>
+                  <a href="#" class="social-link">privacy page</a>
+                </div>
+
+                <div>
+                  <a href="#" class="social-link">Facebook</a>
+                  <a href="#" class="social-link">Instgram</a>
+                  <a href="#" class="social-link">Twitter</a>
+                </div>
               </div>
+            </div>
+          </div>
+          <div class="footer--right">
+            <div class="contact-us-form">
+              <h2>Contact Us</h2>
+              <div class="content">
+                <form action="#" class="form">
+                  <div class="email">
+                    <div class="text">Email *</div>
+                    <input
+                      type="email"
+                      required
+                      name="email"
+                      placeholder="youremail@gmail.com"
+                      class="input-field"
+                    />
+                  </div>
 
-              <div>
-                <a href="#" class="social-link">Facebook</a>
-                <a href="#" class="social-link">Instgram</a>
-                <a href="#" class="social-link">Twitter</a>
+                  <div class="message">
+                    <div class="text">Message *</div>
+                    <textarea
+                      rows="3"
+                      cols="25"
+                      required
+                      name="message"
+                      placeholder="what is your quiery"
+                      class="input-field"
+                    ></textarea>
+                  </div>
+
+                  <button class="btn btn--footer" type="submit">Send</button>
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer--right">
-          <div class="contact-us-form">
-            <h2>Contact Us</h2>
-            <div class="content">
-              <form action="#" class="form">
-                <div class="email">
-                  <div class="text">Email *</div>
-                  <input
-                    type="email"
-                    required
-                    name="email"
-                    placeholder="youremail@gmail.com"
-                    class="input-field"
-                  />
-                </div>
+      </footer>
+    </div>
 
-                <div class="message">
-                  <div class="text">Message *</div>
-                  <textarea
-                    rows="3"
-                    cols="25"
-                    required
-                    name="message"
-                    placeholder="what is your quiery"
-                    class="input-field"
-                  ></textarea>
-                </div>
-
-                <button class="btn btn--footer" type="submit">Send</button>
-              </form>
-            </div>
-          </div>
-        </div>
+    <div class="user-details-wrap">
+      <div class="profile">
+        <img src="" alt="" class="profile-image" />
+        <span class="profile-name">Will Madikizela</span>
       </div>
-    </footer>
-  </div>
-    <!-- #endregion Footer Section -->
 
-  <!-- #region js scripts -->
+      <br />
+
+      <div class="list-wrap">
+        <div class="list-head">Wishlist</div>
+        <ul id="wishlist">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+        </ul>
+      </div>
+
+      <div class="list-wrap">
+        <div class="list-head">Cart</div>
+        <ul id="wishlist">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- #region js scripts -->
     <script src="js/data.js"></script>
     <script src="js/index.js"></script>
-  <!-- #endregion js scripts -->
-
+    <!-- #endregion js scripts -->
   </body>
 </html>
