@@ -285,3 +285,10 @@ body {
 .menu-close {
   display: none;
 }
+.info span{
+  float: left;
+  width: 0.7em;
+  font-size: 400%;
+  line-height: 80%;
+  font-family: algerian, courier;
+}

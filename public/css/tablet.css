@@ -19,8 +19,11 @@
   }
   .sidebar-wrap ul {
     display: flex;
-    gap: 1em;
+    /* gap: 1em; */
     height: max-content;
+    width: 100%;
+    flex-wrap: wrap;
+
   }
   .content-wrap {
     position: relative;
